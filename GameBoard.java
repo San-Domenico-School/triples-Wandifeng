@@ -13,8 +13,6 @@ public class GameBoard extends World
     public GameBoard()
     {   
         super(430, 600, 1, false); 
-        //new Tester();
+        new Tester();
     }
-
-
 }
