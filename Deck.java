@@ -1,8 +1,8 @@
 /**
- * Write a description of class Deck here.
+ * Game Board for Triples
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Wandi Feng 
+ * @2023/1/21
  */
 
 import greenfoot.*;
@@ -47,22 +47,16 @@ public class Deck
     }
     
     //forces the number of cards in the unshuffled deck to either be 27 (3 set of 3 characteristics of triples) or 81(3 set of 4 characteristics of triples)
-    public void limitNumCardsInDeck(int i)
+    public int limitNumCardsInDeck(int i)
     {
         if (i <= 27)
         {
-            System.out.println("27");
+            return 27;
         }
         else
         {
-            System.out.println("81");
+            return 81;
         }
-    }
-    
-    //initializes all the cards to the unshuffled deck
-    public void populateUnShuffledDeckWithCards()
-    {
-        
     }
     
     //shuffles the unshuffled deck to form the shuffled deck.  Removes blank card
@@ -74,19 +68,7 @@ public class Deck
         }
         shuffledDeck.remove(shuffledDeck.size()-1);
     }
-    
 
-    
-    
-
-    
-    
-    
-    
-    /****************************************************
-    ***   Leave as comment until ready to implement   ***
-    *****************************************************
-    // adds all the cards to the unshuffled deck.   
     private void populateUnshuffledDeckWithCards(int numOfCardsInDeck)        
     {
         unShuffledDeck[0] = new Card(Card.Shape.NO_SHAPE, Card.Color.NO_COLOR,0,0,
@@ -342,6 +324,4 @@ public class Deck
                 }
           }
     }
-    
-    **************  END OF COMMENT BLOCK  ***************/
 }
