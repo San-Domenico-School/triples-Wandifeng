@@ -64,7 +64,7 @@ public class Dealer extends Actor
         }
         else
         {
-           Animations.wobble(Card[] card);
+           Animations.wobble(cardsSelected);
         }
     }
     

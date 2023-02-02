@@ -31,7 +31,7 @@ public class Player extends Actor
     public void act()
     {
         selectCards();
-        Dealer.checkIfTriple(ArrayList<Card> cardsOnBoard, Card[] cardsSelected, ArrayList<Integer>selectedCardsIndex);
+        dealer.checkIfTriple(cardsOnBoard, cardsSelected, selectedCardsIndex);
         resetCardsSelected();
 
     }
