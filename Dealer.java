@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Game Board for Triples
  * 
  * @Wandi Feng 
- * @2023/1/21
+ * @2023/2/1
  */
 import java.util.ArrayList;
 public class Dealer extends Actor

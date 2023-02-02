@@ -2,10 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.Set;
 
 /**
- * Write a description of class Player here.
+ * Game Board for Triples
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Wandi Feng 
+ * @2023/2/1
  */
 import java.util.ArrayList;
 
