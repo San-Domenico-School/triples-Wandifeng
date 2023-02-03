@@ -18,9 +18,10 @@ public class Player extends Actor
     
      public Player(Dealer dealer)
     {
-        Card[] cardsSelected = new Card[3];
-        ArrayList<Card> cardsOnBoard = new ArrayList<Card>();
-        ArrayList<Integer> selectedCardsIndex = new ArrayList<Integer>();
+        cardsSelected = new Card[3];
+        cardsOnBoard = new ArrayList<Card>();
+        selectedCardsIndex = new ArrayList<Integer>();
+        this.dealer = dealer;
     }
     
     public void addedToWorld (World world)
@@ -31,9 +32,11 @@ public class Player extends Actor
     public void act()
     {
         selectCards();
-        dealer.checkIfTriple(cardsOnBoard, cardsSelected, selectedCardsIndex);
-        resetCardsSelected();
-
+        if(threeCardsSelected())
+        {
+            dealer.checkIfTriple(cardsOnBoard, cardsSelected, selectedCardsIndex);
+            resetCardsSelected();
+        }
     }
     
     private void selectCards()
